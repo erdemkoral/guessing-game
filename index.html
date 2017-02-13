@@ -2,53 +2,7 @@
 <html>
   <head>
     <title>N2 Assignment</title>
-    <script type="text/javascript">
-
-
-    console.log("Asking user for his/her name...");
-    var userName = prompt("Please enter your name.")
-
-
-    console.log("Asking user Question1");
-    var question1 = prompt("True or False? Coffee in the United States is only grown in Hawaii and Puerto Rico.");
-    if ((question1.toLowerCase() === "true")||(question1.toLowerCase() === "t")){
-      alert("Great!! " + userName + " ,you got it.");
-    } else{
-      alert("Sorry:( " + userName +" ,you missed this one.");
-    }
-
-    console.log("Asking user Question2");
-    var question2 = prompt("True or False? Robusta coffee beans have three times as much caffeine than Arabica beans, but our of less quality.");
-    if ((question2.toLowerCase() === "false")||(question2.toLowerCase() === "f")){
-      alert("Great!! " + userName + ". Your answer is correct.");
-    } else{
-      alert("Sorry:( " + userName +". It is only twice as much.");
-    }
-
-    console.log("Asking user Question3");
-    var question3 = prompt("True or False? Black coffee with no additives contains no calories.");
-    if ((question3.toLowerCase() === "true")||(question3.toLowerCase() === "t")){
-      alert("Great!! " + userName + ". Your answer is correct.");
-    } else{
-      alert("Sorry:( " + userName +" ,you missed this one.");
-    }
-
-
-    console.log("Asking user Question4");
-    var question4 = prompt("How many cups of coffee does an avereaga person drink a day?");
-    if (question4 === 2){
-      alert("Great!! " + userName + ". Your answer is correct.");
-    } else if (question3 >= 2) {
-      alert("Sorry:( " + userName +" ,your answer is too high.");
-    } else
-    {
-      alert("Sorry:( " + userName +" ,your answer is too low.");
-    }
-
-
-
-
-    </script>
+    <script type="text/javascript" src="game.js"></script>
 
     <body align="center">
 
