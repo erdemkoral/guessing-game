@@ -1,5 +1,5 @@
 
-/*console.log("Asking user for his/her name...");
+console.log("Asking user for his/her name...");
 var userName = prompt("Please enter your name.");
 
 console.log("variable created to keep the score ");
@@ -8,7 +8,7 @@ var count=0;
 /*console.log("Asking user for his/her name until variable is not blank")
 while (userName === ""){
 userName =  prompt("Please enter your name.");
-}
+}*/
 
 console.log("Asking user for his/her name until variable is not blank")
 var namePrompt = "Invalid Entry. Please enter your name.";
@@ -107,17 +107,17 @@ questionFour();
 
 console.log("Asking user Question5.");
 function questionFive() {
-  while(question5 !== 2 ){
+  while(question5 !== 33 ){
     var question5 = prompt("How old am I?");
     question5 = parseInt(question5);
-    if (question5 > 2){
+    if (question5 > 33){
       alert("Your guess is too high. Try again.");
-    } else if (question5 < 2){
+    } else if (question5 < 33){
       alert("Your guess is too low. Try again.");
     }
 
     var msg;
-    if(question5 === 2){
+    if(question5 === 33){
       msg = ("Correct!!");
       count++;
     }
@@ -155,4 +155,4 @@ if (count === 6) {
 
 
 var doc = document.getElementById('scoreBoard');
-doc.textContent = score;*/
+doc.textContent = score;
