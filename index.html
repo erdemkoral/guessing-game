@@ -1,82 +1,88 @@
-<!DOCTYPE html>
+<!DOCTYpe html>
 <html>
-  <head>
-    <title>N2 Assignment</title>
-    <script type="text/javascript">
 
+<head>
+  <title>Guessing Game</title>
+  <link rel = "stylesheet" type = "text/css" href = "info.css" />
+</head>
 
-    console.log("Asking user for his/her name...");
-    var userName = prompt("Please enter your name.")
+<body>
+  <div id="master">
+    <div id="header">
+      <h1>erdem koral</h1>
+    </div>
+    <div id="content">
+      <div id="container1">
+        <p>Hi, I am so glad that you are here, visiting my super cool to be web site. I am currently studying software development at Code Fellows PDX and this is my first web site. I am sure there will be a lot of improvements as I learn more about html, css and javascript concepts and applications. It is a work in progress, so please check this web site every once in a while to see my ass kicking progress.<br/> Let me tell you about myself a little bit;</p>
 
+        <p>I am 33 years old and getting older ’n older like everyone else :) I have
+          two wonderful children; Emre and Leyla. Emre is 4yrs old and he is
+          attending to a pre school program at West Side Montessori. Leyla is 6 yrs
+          old and she is a kindergartner at FarmingtonView Elementary School. My
+          beautiful wife Sierra and I met almost 10 years ago and have been married
+          for almost 9 years. It has been the best years of my life. We like to
+          spend time with family&amp;friends and enjoy the outdoors.
+          <br/><br/>
+          My hobbies are:</p>
+          <dt>
+            <dd>Working on anything with an engine (2 cycle, 4 cycle)</dd>
+            <dd>Helping Sierra with gardening (mostly building structures)</dd>
+            <dd>Roastin, Sizzlin&amp;Grillin</dd>
+            <dd>Binge watching tv series</dd>
+            <dd>Camping,fishing and hunting</dd>
+          </dt>
 
+          <p>If you have similar interests, shoot me an email at <a class="a" href= mailto:"koral.erdem@gmail.com">koral.erdem@gmail.com</a></p>
 
-    console.log("Asking user Question1");
-    var question1 = prompt("True or False? Coffee in the United States is only grown in Hawaii and Puerto Rico.");
-    if (question1 === "true"){
-      alert("Great!! " + userName + " ,you got it.");
-    } else{
-      alert("Sorry:( " + userName +" ,you missed this one.");
-    }
+          <p>Would you like to play the <strong>GuessingGame</strong>? Answer the questions below:</p>
+          <form action="\untitled.js">
+            <fieldset>
+            <legend>True or False?</legend>
 
-    console.log("Asking user Question2");
-    var question2 = prompt("True or False? Robusta coffee beans have three times as much caffeine than Arabica beans, but our of less quality.");
-    if (question2 === "false"){
-      alert("Great!! " + userName + ". Your answer is correct.");
-    } else{
-      alert("Sorry:( " + userName +". It is only twice as much.");
-    }
+            Question One:<br>
+            Lightning never strikes in the same place twice.<br>
+            <input type="radio" name="answer1" value="true"> True
+            <input type="radio" name="answer1" value="false"> False
+            <p id="scoreboard1"></p>
+            <hr>
 
-    console.log("Asking user Question3");
-    var question3 = prompt("True or False? Black coffee with no additives contains no calories.");
-    if (question3 === "true"){
-      alert("Great!! " + userName + ". Your answer is correct.");
-    } else{
-      alert("Sorry:( " + userName +" ,you missed this one.");
-    }
+            Question Two:<br>
+            Humans can’t breathe and swallow at the same time.<br>
+            <input type="radio" name="answer2" value="true" > True
+            <input type="radio" name="answer2" value="false"> False
+            <p id="scoreboard2"></p>
+            <hr>
 
+            Question Three:<br>
+            Twinkies have an infinite shelf life.<br>
+            <input type="radio" name="answer3" value="true"> True
+            <input type="radio" name="answer3" value="false"> False
+            <p id="scoreboard3"></p>
+            <hr>
 
-    console.log("Asking user Question4");
-    var question3 = prompt("How many cups of coffee does an avereaga person drink a day?");
-    if (question3 === 2){
-      alert("Great!! " + userName + ". Your answer is correct.");
-    } else if (question3 >= 2) {
-      alert("Sorry:( " + userName +" ,your answer is too high.");
-    } else
-    {
-      alert("Sorry:( " + userName +" ,your answer is too low.");
-    }
+            Question Four:<br>
+            The owner of the company that makes Segways died after
+            accidentally driving his Segway off a cliff.<br>
+            <input type="radio" name="answer4" value="true"> True
+            <input type="radio" name="answer4" value="false"> False
+            <p id="scoreboard4"></p>
+            <hr>
 
+             <input type="button" onclick="runQuestions()" value="Submit button">
+          </fieldset>
+        </form>
 
+        </div>
 
+        <div id="container2">
+          <img src="images/family.jpg"  alt="fishing" width= "70%"  />
+          <img src="images/fish.jpg"  alt="fishing" width= "70%"  />
+          <img src="images/mountain.jpg"  alt="fishing" width= "70%"  />
+        </div>
+        
+      </div>
+  </div>
+  <script src="game.js"></script>
+</body>
 
-    </script>
-
-    <body align="center">
-
-     <h1>Welcome to Xyz Coffee Roasters  </h1>
-     <hr>
-
-      <p> XYZ&trade; Coffee is about pleasure. It’s that moment when your
-         hand is warmed by the mug, you bring it up to your nose,
-          inhale deeply and then take a sip.
-          <br><br >We currently offer 3 types of coffee:</p>
-
-       <ul align="left">
-        <li>X coffee <i>&#36;14.00</i> lbs <a href="https://www.amazon.com/Folgers-Classic-Roast-Ground-Coffee/dp/B010ULFOWC/ref=sr_1_4_s_it?s=grocery&ie=UTF8&qid=1486525320&sr=1-4&keywords=coffee&th=1">Buy Now!!</a></li>
-        <li>Y coffee <i>&#36;12.00</i> lbs <a href="https://www.amazon.com/Folgers-Classic-Roast-Ground-Coffee/dp/B010ULFOWC/ref=sr_1_4_s_it?s=grocery&ie=UTF8&qid=1486525320&sr=1-4&keywords=coffee&th=1">Trending!!</a></li>
-        <li>Z coffee <i>&#36;11.00</i> lbs <a href="https://www.amazon.com/Folgers-Classic-Roast-Ground-Coffee/dp/B010ULFOWC/ref=sr_1_4_s_it?s=grocery&ie=UTF8&qid=1486525320&sr=1-4&keywords=coffee&th=1">On Sale!!</a></li>
-       </ul>
-
-     <p>Even though we offer three types of coffee, they taste <b>exactly same</b> </p>
-     <b></p>
-
-     <h2></h2>
-     <p></p>
-
-
-
-
-    </body>
-
-
-   </html>
+</html>
