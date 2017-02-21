@@ -13,10 +13,7 @@
     </div>
     <div id="content">
       <div id="container1">
-        <p>Hi, I am so glad that you are here, visiting my super cool to be web site. I am currently studying software development at Code Fellows PDX and this is my firs web site. I am sure there will be a lot of improvements as I learn more about html, css and javascript concepts and applications. It is a work in progress, so please check this web site every once in a while to see my ass kicking progress.<br/> Let me tell you about myself a little bit;</p>
-        <p>I have been working in dental field since 2010, as a maxillofacial surgical assistant, dental technician/ceramist and most recently dental laboratory owner( I make teeth). I am the founder of Original32 Dental Lab, and serving dental professionals in metro Portland Area. For more info about Original32 please  <a class="a" href="https://www.original32.com" target="_blank">Click Here!!</a>
-        </p>
-        <p>Originally from Turkey, I have lived in Boston for the last decade. My family and I recently relocated to Oregon to be closer to family and experience a new lifestyle in the country. We began transitioning this summer, and after some international travel and a cross-country road-trip we arrived in Hillsboro about six months  ago. While bittersweet to leave our friends and careers in Boston, I am optimistic and ready to establish myself in metro Portland area.</p>
+        <p>Hi, I am so glad that you are here, visiting my super cool to be web site. I am currently studying software development at Code Fellows PDX and this is my first web site. I am sure there will be a lot of improvements as I learn more about html, css and javascript concepts and applications. It is a work in progress, so please check this web site every once in a while to see my ass kicking progress.<br/> Let me tell you about myself a little bit;</p>
 
         <p>I am 33 years old and getting older ’n older like everyone else :) I have
           two wonderful children; Emre and Leyla. Emre is 4yrs old and he is
@@ -25,7 +22,7 @@
           beautiful wife Sierra and I met almost 10 years ago and have been married
           for almost 9 years. It has been the best years of my life. We like to
           spend time with family&amp;friends and enjoy the outdoors.
-          <br/>
+          <br/><br/>
           My hobbies are:</p>
           <dt>
             <dd>Working on anything with an engine (2 cycle, 4 cycle)</dd>
@@ -37,16 +34,44 @@
 
           <p>If you have similar interests, shoot me an email at <a class="a" href= mailto:"koral.erdem@gmail.com">koral.erdem@gmail.com</a></p>
 
-          <p>Thank you for playing the <strong>GuessingGame</strong>. Here are your answers and results:</p>
-          <ol>
-            <li id="answer1"></li>
-            <li id="answer2"></li>
-            <li id="answer3"></li>
-            <li id="answer4"></li>
-            <li id="answer5"></li>
-            <li id="answer6"></li>
-          </ol>
-          <h3 id="scoreBoard"></h3>
+          <p>Would you like to play the <strong>GuessingGame</strong>? Answer the questions below:</p>
+          <form action="\untitled.js">
+            <fieldset>
+            <legend>True or False?</legend>
+
+            Question One:<br>
+            Lightning never strikes in the same place twice.<br>
+            <input type="radio" name="answer1" value="true"> True
+            <input type="radio" name="answer1" value="false"> False
+            <p id="scoreboard1"></p>
+            <hr>
+
+            Question Two:<br>
+            Humans can’t breathe and swallow at the same time.<br>
+            <input type="radio" name="answer2" value="true" > True
+            <input type="radio" name="answer2" value="false"> False
+            <p id="scoreboard2"></p>
+            <hr>
+
+            Question Three:<br>
+            Twinkies have an infinite shelf life.<br>
+            <input type="radio" name="answer3" value="true"> True
+            <input type="radio" name="answer3" value="false"> False
+            <p id="scoreboard3"></p>
+            <hr>
+
+            Question Four:<br>
+            The owner of the company that makes Segways died after
+            accidentally driving his Segway off a cliff.<br>
+            <input type="radio" name="answer4" value="true"> True
+            <input type="radio" name="answer4" value="false"> False
+            <p id="scoreboard4"></p>
+            <hr>
+
+             <input type="button" onclick="runQuestions()" value="Submit button">
+          </fieldset>
+        </form>
+
         </div>
 
         <div id="container2">
@@ -54,6 +79,7 @@
           <img src="images/fish.jpg"  alt="fishing" width= "70%"  />
           <img src="images/mountain.jpg"  alt="fishing" width= "70%"  />
         </div>
+        
       </div>
   </div>
   <script src="game.js"></script>

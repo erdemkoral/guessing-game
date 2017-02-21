@@ -18,7 +18,8 @@ body{
   background-color: #708090;
   text-align: right;
   color: #ea9f59;
-  font-size: 30px
+  font-size: 30px;
+  width: 900px;
 
 }
 
@@ -31,7 +32,7 @@ body{
 #container1{
   background: #ffffff;
   width: 540px;
-  height: 840px;
+  height: 1030px;
 
   float:left;
   padding: 13px;
@@ -45,10 +46,9 @@ body{
 #container2{
   background-color:#ffffff;
   width: 300px;
-  height:840px;
-  image-orientation: center;
+  height:954px;
   float: right;
-  padding:13px;
+  padding:50px 13px;
   text-align: center;
   border: 1px;
   border-radius: 25px;
@@ -62,4 +62,18 @@ body{
 
 .a:hover{
   color: blue;
+}
+
+div .crt {
+  color: green;
+}
+
+div .wrg {
+  color: red;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  float: right;
 }
